@@ -1,0 +1,41 @@
+//* HERO SECTION
+.hero-section
+{
+    //* Block
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-lightgrey;
+
+    //* Elements
+    &__inner
+    {
+        max-width: 100%;
+        max-height: 100%;
+        width: $page-width;
+    }
+
+    &__body
+    {
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 370px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        // position: relative;
+        // display: grid;
+        // grid-template: 1fr 1fr $corner-width / repeat(3, 1fr);
+
+        background-color: $color-white;
+    }
+
+    &__big-cta
+    {
+        // height: 50%;
+        margin-top: -60px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,35 @@
+//* SEARCH BAR
+.search-bar
+{
+    //* Block
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    max-width: 100%;
+    width: min-content;
+
+    border: 2px $color-grey solid;
+    border-radius: 5px;
+
+    //* Elements
+    &__input
+    {
+        // height: 25px;
+        max-height: 100%;
+        overflow: hidden;
+
+        border: none;
+        background-color: transparent;
+
+        &:focus
+        {
+            outline: none;
+        }
+
+        &::placeholder
+        {
+            color: $color-grey;
+        }
+    }
+}

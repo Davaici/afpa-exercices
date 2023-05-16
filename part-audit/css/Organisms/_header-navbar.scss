@@ -1,0 +1,22 @@
+//* HEADER NAVBAR
+.header-navbar
+{
+    //* Block
+    background-color: $color-blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    //* Elements
+    &__inner
+    {
+        max-width: 100%;
+        width: $page-width;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}

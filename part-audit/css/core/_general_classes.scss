@@ -1,0 +1,26 @@
+//* GENERAL WRAPPERS
+.w-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//* GENERAL MODIFIERS
+.--color--orange
+{
+    color: $color-orange !important;
+}
+
+.--hover--underline
+{
+    &:hover
+    {
+        text-decoration: underline !important;
+    }
+}
+
+.--font--small
+{
+    font-size: calc($font-regular - 5px);
+}

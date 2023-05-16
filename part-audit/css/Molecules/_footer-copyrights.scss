@@ -1,0 +1,25 @@
+//* FOOTER COPYRIGHTS
+.footer-copyrights
+{
+    //* Block
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    text-align: center;
+
+    background-color: $color-lightblue;
+
+    //* Elements
+    &__inner
+    {
+        max-width: 100%;
+        width: $page-width;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

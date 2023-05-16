@@ -1,0 +1,45 @@
+//* BTN
+.btn
+{
+    //* Block
+    background-color: $color-orange;
+    color: $color-white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 10px 5px 7px 5px;
+    // display: inline-block;
+    display: block;
+    width: fit-content;
+
+    &:hover
+    {
+        background-color: $color-orange-hover;
+    }
+
+    //* Modifiers
+    &--blue
+    {
+        background-color: $color-blue;
+
+        &:hover
+        {
+            background-color: $color-blue-hover;
+        }
+    }
+
+    &--stretch
+    {
+        display: block;
+    }
+
+    &--rounded
+    {
+        padding: 5px 15px 3px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
