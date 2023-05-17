@@ -1,0 +1,21 @@
+//* NAV BUTTON
+.nav-button
+{
+    //* Block
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend %btn;
+
+    background-color: $color-blue;
+    padding: 5px 20px;
+
+    width: 145px;
+    max-width: 100%;
+    // flex-grow: 1;
+
+    &:hover
+    {
+        background-color: $color-blue-hover;
+    }
+}
