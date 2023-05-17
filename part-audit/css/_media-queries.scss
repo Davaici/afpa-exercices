@@ -1,3 +1,6 @@
+//* BREARKPOINTS
+
+//* Tablets
 @media all and (max-width: 840px) //835px
 {
     //* HEADER
@@ -63,17 +66,7 @@
     }
 }
 
-@media all and (max-width: 730px)
-{
-    //* NAVBAR
-    .navbar
-    {
-        //* Block
-        width: 100%;
-        flex-wrap: wrap;
-    }
-}
-
+//* Mobiles
 @media all and (max-width: 580px)
 {
     //* HEADER
@@ -94,6 +87,28 @@
     }
 }
 
+//* Smaller mobiles
+@media all and (max-width: 410px)
+{
+    //* MAIN SECTION
+    .main-section
+    {
+        //* Elements
+        &__corner
+        {
+            display: none;
+        }
+
+        &__moto-and-corners
+        {
+            display: block;
+
+            padding: 0 10px 0 10px;
+        }
+    }
+}
+
+//* Smallest mobiles
 @media all and (max-width: 340px)
 {
     //* CARD

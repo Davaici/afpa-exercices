@@ -230,6 +230,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   align-content: center;
   width: fit-content;
@@ -396,18 +397,21 @@ body {
     gap: 20px;
   }
 }
-@media all and (max-width: 730px) {
-  .navbar {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-}
 @media all and (max-width: 580px) {
   .header-logo__search-box {
     display: none;
   }
   .moto {
     font-size: 32.5px;
+  }
+}
+@media all and (max-width: 410px) {
+  .main-section__corner {
+    display: none;
+  }
+  .main-section__moto-and-corners {
+    display: block;
+    padding: 0 10px 0 10px;
   }
 }
 @media all and (max-width: 340px) {
