@@ -1,0 +1,22 @@
+//* SOCIAL MEDIA CTA
+.social-media-cta
+{
+    //* BLOCK
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 10px;
+
+    *
+    {
+        min-width: 0;
+    }
+}

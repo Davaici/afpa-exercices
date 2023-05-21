@@ -1,0 +1,27 @@
+//* RESETS
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+img
+{
+    display: block;
+    max-width: 100%;
+    //? Peut-etre mettre "width: 100%" et tjrs utiliser un container parent
+}
+
+h1, h2, h3
+{
+    font-size: inherit;
+    font-weight: normal;
+}

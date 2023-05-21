@@ -1,0 +1,19 @@
+//* CONTACT DETAILS FORM
+.contact-details-form
+{
+    //* Block
+    max-width: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    //* Elements
+    &__nav
+    {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        justify-items: center;
+        align-items: center;
+    }
+}

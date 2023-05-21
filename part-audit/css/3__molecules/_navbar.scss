@@ -1,0 +1,42 @@
+//* NAVBAR
+.navbar
+{
+    //* Block
+    display: block;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+
+    background-color: $color-blue;
+    text-align: center;
+
+    //* Elements
+    &__nav-button
+    {
+        position: relative;
+
+        &::after
+        {
+            content: "";
+            border-left: 1px rgba($color-white, 0.5) solid;
+    
+            position: absolute;
+            height: 20px;
+            max-height: 100%;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:last-of-type::after
+        {
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+//* FORM NAV
+.form-nav
+{
+    //* Block
+    max-width: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //* Elements
+    &__numbers
+    {
+        display: block;
+        color: $color-grey;
+        font-size: calc(#{$font-regular} - 3px);
+    }
+
+    &__arrow
+    {
+        display: block;
+        max-width: 100%;
+        width: 20px;
+    }
+}

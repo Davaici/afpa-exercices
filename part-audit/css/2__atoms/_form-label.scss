@@ -1,0 +1,17 @@
+//* FORM LABEL
+.form-label
+{
+    //* Block
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    font-size: calc(#{$font-regular} - 2px);
+    color: $color-blue;
+    font-weight: bold;
+
+    //* Modifiers
+    &--fit
+    {
+        width: fit-content;
+    }
+}

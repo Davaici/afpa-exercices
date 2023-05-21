@@ -1,0 +1,25 @@
+//* P
+.p
+{
+    //* Block
+    display: block;
+
+    font-size: $font-regular;
+
+    //* Modifiers
+    &--small
+    {
+        font-size: calc(#{$font-regular} - 5px);
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-small-mobile)
+    {
+        font-size: calc(#{$font-regular} - 3px);
+        
+        &--small
+        {
+            font-size: calc(#{$font-regular} - 8px);
+        }
+    }
+}

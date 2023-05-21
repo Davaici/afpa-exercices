@@ -1,0 +1,26 @@
+//* CONTACT US CONTENT
+.contact-us-content
+{
+    //* Block
+    max-width: 100%;
+    width: $contact-us-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 35px;
+
+    background-color: $color-white;
+
+    //* Elements
+    &__form-field
+    {
+        min-width: 0;
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-small-laptop)
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

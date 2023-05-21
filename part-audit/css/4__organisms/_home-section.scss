@@ -1,0 +1,25 @@
+//* HOME SECTION
+.home-section
+{
+    //* Block
+    max-width: 100%;
+    width: $page-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $color-white;
+
+    //* Elements
+    &__hero-banner
+    {
+        flex-grow: 1;
+    }
+
+    &__cards-and-tagline
+    {
+        flex-grow: 1;
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,18 @@
+//* CHECKBOX
+.checkbox
+{
+    //* Block
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: calc(#{$font-regular} - 2px);
+    color: $color-blue;
+
+    //* Elements
+    &__input
+    {
+        border-radius: 0;
+        border-color: $color-darkgrey;
+    }
+}

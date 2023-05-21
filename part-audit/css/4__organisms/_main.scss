@@ -1,0 +1,18 @@
+//* MAIN
+.main
+{
+    //* Block
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $color-grey;
+
+    //* Elements
+    &__section
+    {
+        max-width: 100%;
+        width: $page-width;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,12 @@
+//* CARDS AND TAGLINE
+.cards-and-tagline
+{
+    //* Block
+    max-width: 100%;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 50px;
+}

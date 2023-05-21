@@ -1,0 +1,60 @@
+//* BUTTON
+.button
+{
+    //* Block
+    display: block;
+    width: fit-content;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $font-regular;
+    background-color: $color-orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 5px 7px 5px;
+
+    &:hover
+    {
+        background-color: $color-orange-hover;
+    }
+
+    //* Modifiers
+    &--blue
+    {
+        background-color: $color-blue;
+
+        &:hover
+        {
+            background-color: $color-blue-hover;
+        }
+    }
+
+    &--stretch
+    {
+        width: auto;
+    }
+
+    &--rounded
+    {
+        padding: 5px 15px 3px 15px;
+        border-radius: $border-radius-moderate;
+        font-weight: bold;
+    }
+
+    &--mi-rounded
+    {
+        padding: 5px 15px 3px 15px;
+        border-radius: $border-radius-soft;
+        font-weight: bold;
+    }
+
+    &--small
+    {
+        text-transform: none;
+        padding: 5px 30px 5px 30px;
+        border-radius: $border-radius-soft;
+        font-weight: bold;
+    }
+}

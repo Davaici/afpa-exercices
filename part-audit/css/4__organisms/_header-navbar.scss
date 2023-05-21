@@ -1,0 +1,30 @@
+//* HEADER NAVBAR
+.header-navbar
+{
+    //* Block
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-blue;
+
+    //* Elements
+    &__inner
+    {
+        width: $page-width;
+        max-width: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-small-laptop)
+    {
+        &__inner
+        {
+            justify-content: center;
+        }
+    }
+}

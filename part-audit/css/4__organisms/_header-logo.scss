@@ -1,0 +1,27 @@
+//* HEADER LOGO
+.header-logo
+{
+    //* Block
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //* Elements
+    &__inner
+    {
+        width: $page-width;
+        max-width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        //* Media queries
+        @media all and (max-width: $breakpoint-small-laptop) // Middle pc-tablet
+        {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

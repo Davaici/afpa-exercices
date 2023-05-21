@@ -1,0 +1,18 @@
+//* MEMBER AREA TITLE
+.member-area-title
+{
+    //* Block
+    display: block;
+
+    font-weight: bold;
+    font-size: calc(#{$font-regular} * 1.25);
+    color: $color-blue;
+    text-align: center;
+
+    //* Elements
+    &__strong
+    {
+        color: $color-orange;
+        text-transform: uppercase;
+    }
+}

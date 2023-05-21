@@ -1,0 +1,36 @@
+//* VARIABLES
+//* Colors
+$color-grey: lightgrey;
+$color-lightgrey: lightgrey;
+$color-darkgrey: #A3A5A7;
+$color-white: white;
+$color-orange: #D07326;
+$color-blue: #25408D;
+$color-lightblue: #7C8DBB;
+
+//* Modified colors
+$color-orange-hover: lighten($color-orange, 10%);
+$color-blue-hover: lighten($color-blue, 10%);
+
+//* Fonts
+$font-regular: 17px;
+
+//* Images sizes
+$corner-width: 46px;
+$banner-height: 370px;
+
+//* Radius
+$border-radius-strong: 10px;
+$border-radius-moderate: 5px;
+$border-radius-soft: 3px;
+
+//* Layouts
+$page-width: 1150px;
+$contact-us-width: 830px;
+
+//* Media queries
+$breakpoint-laptop: 992px;
+$breakpoint-small-laptop: 880px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 576px;
+$breakpoint-small-mobile: 440px;

@@ -1,0 +1,29 @@
+//* FORM INPUT
+.form-input
+{
+    //* Block
+    display: block;
+    max-width: 100%;
+
+    padding: 8px 5px 12px 5px;
+    border: 1px solid $color-darkgrey;
+    border-radius: $border-radius-moderate;
+    font-size: calc(#{$font-regular} - 2px);
+
+    &:focus
+    {
+        outline: none;
+        border: 1px $color-blue solid;
+    }
+
+    &::placeholder
+    {
+        color: $color-blue;
+    }
+
+    //* Modifiers
+    &--fit
+    {
+        width: fit-content;
+    }
+}

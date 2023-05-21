@@ -1,0 +1,36 @@
+//* CARD
+.card
+{
+    //* Block
+    max-width: 100%;
+    width: 260px;
+    overflow: hidden;
+
+    border: 2px $color-blue solid;
+    border-radius: $border-radius-strong;
+    color: $color-white;
+
+    //* Elements
+    &__title
+    {
+        background-color: $color-blue;
+        text-align: center;
+        font-size: 19px;
+
+        padding: 7px 30px;
+    }
+
+    &__body
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px 20px 40px;
+    }
+
+    &__strong
+    {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

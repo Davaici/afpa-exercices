@@ -1,0 +1,50 @@
+//* MEMBER AREA SECTION
+.member-area-section
+{
+    //* Block
+    display: flex;
+    flex-direction: row;
+
+    background-color: $color-white;
+
+    //* Elements
+    &__account
+    {
+        flex-basis: 0;
+        flex-grow: 1;
+        border-right: 1px $color-darkgrey solid;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        //* Media queries
+        @media all and (max-width: $breakpoint-laptop)
+        {
+            border-right: none;
+            border-bottom: 1px $color-darkgrey solid;
+        }
+    }
+
+    &__contact-details
+    {
+        flex-basis: 0;
+        flex-grow: 3;
+        min-width: 0;
+
+        padding: 20px 0 20px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-laptop)
+    {
+        flex-direction: column;
+    }
+}

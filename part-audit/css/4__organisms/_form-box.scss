@@ -1,0 +1,36 @@
+//* FORM BOX
+.form-box
+{
+    //* Block
+    display: block;
+    width: 545px;
+    max-width: 100%;
+
+    overflow: hidden;
+    border: 1px solid $color-lightgrey;
+    border-top-left-radius: $border-radius-moderate;
+    border-top-right-radius: $border-radius-moderate;
+
+    //* Elements
+    &__title
+    {
+        padding: 10px 0 10px 0;
+
+        background-color: $color-blue;
+        color: $color-white;
+        text-align: center;
+        font-weight: bold;
+        font-size: calc(#{$font-regular} + 1px);
+    }
+
+    &__body
+    {
+        padding: 25px 70px 50px 70px;
+
+        @media all and (max-width: $breakpoint-small-mobile)
+        {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+//* FORM SELECT
+.form-select
+{
+    //* Block
+    @extend .form-input;
+
+    display: block;
+}

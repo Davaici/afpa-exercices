@@ -1,0 +1,15 @@
+//* HEADER
+.header
+{
+    //* Block
+    display: flex;
+    flex-direction: column;
+
+    background-color: $color-white;
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-small-laptop)
+    {
+        gap: 20px;
+    }
+}

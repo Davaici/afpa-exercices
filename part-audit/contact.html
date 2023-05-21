@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Accueil - Part'AUDIT</title>
+        <title>Contact - Part'AUDIT</title>
 
-        <!-- STYLES -->
+        <!-- CSS -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body class="body">
+        <!-- HEADER -->
         <header class="header">
             <div class="header-logo">
                 <div class="header-logo__inner">
@@ -46,54 +47,34 @@
             </div>
         </header>
 
+        <!-- MAIN -->
         <main class="main body__main">
-            <div class="home-section main__section">
-                <div class="hero-banner home-section__hero-banner"></div>
+            <section class="contact-us-section main__section">
+                <div class="contact-us-banner-title contact-us-section__contact-us-banner-title">
+                    <div class="contact-us-banner"></div>
 
-                <div class="cards-and-tagline home-section__cards-and-tagline">
-                    <div class="cards-line">
-                        <div class="card">
-                            <div class="card__title"><strong class="card__strong">PROPOSEZ</strong> une prestation</div>
-
-                            <div class="card__body">
-                                <img src="images/icone_proposition_audit.png" alt="Proposition prestation" class="icon">
-
-                                <a href="#" class="button button--rounded">En savoir plus</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card__title"><strong class="card__strong">RECHERCHEZ</strong> un audit interne</div>
-
-                            <div class="card__body">
-                                <img src="images/icone_recherche_audit.png" alt="Recherche audit interne" class="icon">
-
-                                <a href="#" class="button button--rounded">En savoir plus</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card__title"><strong class="card__strong">ACCÉDEZ</strong> à nos autres prestations</div>
-
-                            <div class="card__body">
-                                <img src="images/autre_prestations.png" alt="Proposition prestation" class="icon">
-
-                                <a href="#" class="button button--rounded">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tagline-and-corners tagline-and-corners--stretch">
-                        <img src="images/coin_bleu_basgauche.png" alt="Coin" class="corner tagline-and-corners__left-corner">
-
-                        <div class="tagline tagline-and-corners__tagline">Vos audits internes et formations<br><strong class="tagline__strong">en un clic</strong> !</div>
-
-                        <img src="images/coin_bleu_basgauche.png" alt="Coin" class="corner tagline-and-corners__right-corner">
-                    </div>
+                    <h1 class="contact-us-title contact-us-banner-title__contact-us-title">Contactez-nous !</h1>
                 </div>
-            </div>
+
+                <div class="contact-us-content contact-us-section__contact-us-content">
+                    <img src="images/map.jpg" alt="Carte" class="map contact-us-content__map">
+
+                    <form action="truc.php" class="form-field contact-us-content__form-field">
+                        <input type="text" class="form-input" placeholder="nom">
+                        <input type="text" class="form-input" placeholder="votre email">
+                        <textarea cols="30" rows="10" class="form-input" placeholder="votre message"></textarea>
+                        <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox">
+                            <span>s'inscrire à la newsletter</span>
+                        </label>
+
+                        <button type="submit" class="button button--small button--mi-rounded form-field__button">Envoyer</button>
+                    </form>
+                </div>
+            </section>
         </main>
 
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="footer-social-media">
                 <div class="footer-social-media__inner">

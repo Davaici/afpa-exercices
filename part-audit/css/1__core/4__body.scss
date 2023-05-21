@@ -1,0 +1,21 @@
+//* BODY
+html, body
+{
+    height: 100%;
+}
+
+.body
+{
+    //* Block
+    display: flex;
+    flex-direction: column;
+
+    font-family: sans-serif;
+    // overflow-x: hidden;
+
+    //* Elements
+    &__main
+    {
+        flex-grow: 1;
+    }
+}

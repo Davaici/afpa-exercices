@@ -1,0 +1,23 @@
+//* NAV BUTTPON
+.nav-button
+{
+    //* Block
+    width: 145px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-blue;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: $font-regular;
+
+    &:hover
+    {
+        background-color: $color-blue-hover;
+    }
+}

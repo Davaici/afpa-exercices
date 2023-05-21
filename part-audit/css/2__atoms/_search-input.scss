@@ -1,0 +1,44 @@
+//* SEARCH INPUT
+.search-input
+{
+    //* Block
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    width: min-content;
+
+    padding: 4px;
+    border: 2px $color-grey solid;
+    background-color: $color-white;
+    border-radius: 5px;
+
+    //* Elements
+    &__lens
+    {
+        background: center / contain no-repeat url("../images/loupe_recherche_transparent.png");
+        width: 25px;
+        height: 25px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__input
+    {
+        overflow: hidden;
+
+        border: none;
+        background-color: transparent;
+        font-size: $font-regular;
+
+        &:focus
+        {
+            outline: none;
+        }
+
+        &::placeholder
+        {
+            color: $color-grey;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+//* CONTACT US FORM FIELD
+.form-field
+{
+    //* Block
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+    //* Elements
+    &__button
+    {
+        align-self: flex-end;
+    }
+
+    //* Modifiers
+    &--fit
+    {
+        width: fit-content;
+    }
+
+    &--gap-small
+    {
+        gap: 10px;
+    }
+}

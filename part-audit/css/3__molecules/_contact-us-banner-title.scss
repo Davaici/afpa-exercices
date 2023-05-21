@@ -1,0 +1,32 @@
+//* CONTACT US BANNER TITLE
+.contact-us-banner-title
+{
+    //* Block
+    display: block;
+    max-width: 100%;
+    width: $page-width;
+    position: relative;
+
+    //* Elements
+    &__contact-us-title
+    {
+        display: block;
+        max-width: 100%;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    //* Modifiers
+    &--fit
+    {
+        width: $page-width;
+    }
+
+    &--stretch
+    {
+        width: auto;
+    }
+}

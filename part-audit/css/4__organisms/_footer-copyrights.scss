@@ -1,0 +1,32 @@
+//* FOOTER COPYRIGHTS
+.footer-copyrights
+{
+    //* Block
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-lightblue;
+    color: $color-white;
+    padding: 11px;
+
+    //* Elements
+    &__inner
+    {
+        width: $page-width;
+        max-width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        //* Media queries
+        @media all and (max-width: $breakpoint-tablet)
+        {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

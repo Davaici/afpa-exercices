@@ -1,0 +1,28 @@
+//* FOOTER SOCIAL MEDIA
+.footer-social-media
+{
+    //* Block
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-blue;
+    color: $color-white;
+
+    //* Elements
+    &__inner
+    {
+        display: flex;
+        width: $page-width;
+        max-width: 100%;
+
+        justify-content: flex-end;
+        align-items: center;
+
+        //* Media queries
+        @media all and (max-width: $breakpoint-small-laptop)
+        {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+//* TAGLINE
+.tagline
+{
+    //* Block
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+
+    color: $color-blue;
+    font-size: calc(#{$font-regular} * 2.5);
+    font-weight: bold;
+    text-align: center;
+
+    //* Elements
+    &__strong
+    {
+        color: $color-orange;
+        text-transform: uppercase;
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-mobile)
+    {
+        font-size: calc(#{$font-regular}*2.5 - 10px);
+    }
+}

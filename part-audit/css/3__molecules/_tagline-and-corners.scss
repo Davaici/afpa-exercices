@@ -1,0 +1,47 @@
+//* TAGLINE AND CORNER
+.tagline-and-corners
+{
+    //* Block
+    width: fit-content;
+    max-width: 100%;
+    display: grid;
+    grid-template: 1fr #{$corner-width} / #{$corner-width} 1fr #{$corner-width};
+
+    //* Elements
+    &__left-corner
+    {
+        grid-area: 2 / 1;
+    }
+
+    &__tagline
+    {
+        grid-area: 1 / 2;
+    }
+
+    &__right-corner
+    {
+        grid-area: 2 / 3;
+        transform: rotateZ(0.75turn);
+    }
+
+    //* Modifiers
+    &--stretch
+    {
+        width: auto;
+
+        //* Elements
+        .tagline
+        {
+            width: auto;
+        }
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-small-laptop)
+    {
+        &__left-corner, &__right-corner
+        {
+            display: none;
+        }
+    }
+}

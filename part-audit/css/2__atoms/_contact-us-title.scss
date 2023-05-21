@@ -1,0 +1,29 @@
+//* CONTACT US TITLE
+.contact-us-title
+{
+    //* Block
+    display: block;
+    max-width: 100%;
+    width: $contact-us-width;
+
+    padding: 7px 5px 5px 5px;
+    color: $color-white;
+    background-color: $color-lightblue;
+    border-top-left-radius: $border-radius-strong;
+    border-top-right-radius: $border-radius-strong;
+    font-weight: bold;
+    font-size: calc(#{$font-regular} + 3px);
+    text-transform: uppercase;
+    text-align: center;
+
+    //* Modifiers
+    &--fit
+    {
+        width: fit-content;
+    }
+
+    &--stretch
+    {
+        width: 100%;
+    }
+}
