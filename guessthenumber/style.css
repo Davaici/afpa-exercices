@@ -1,0 +1,149 @@
+/* RESETERS */
+*
+{
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/* BODY */
+body
+{
+    padding: 30px 0;
+    overflow-x: hidden;
+
+    font-family: sans-serif;
+    color: #444;
+}
+::selection
+{
+    background-color: #444;
+    color: white;
+}
+
+.page
+{
+    max-width: 750px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+p
+{
+    font-size: 25px;
+
+    margin-top: 25px;
+}
+p:first-child
+{
+    margin-top: 0;
+}
+
+/* H1 */
+h1
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* PETIT */
+.petit
+{
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ZONE INPUT */
+.zone-input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* BOUTON */
+button
+{
+    padding: 20px;
+    font-size: 25px;
+
+    background-color: #444;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+
+    max-width: 75%;
+
+    transition-duration: 500ms;
+}
+button:hover
+{
+    background-color: white;
+    outline: 1px #444 solid;
+    color: #444;
+}
+
+input
+{
+    padding: 15px;
+    font-size: 20px;
+
+    border: 1px #444 solid;
+    border-radius: 0;
+}
+input:focus
+{
+    outline: 3px lightblue solid;
+}
+
+/* COMMENTAIRE */
+#commentaire
+{
+    font-weight: bold;
+}
+
+.gagne
+{
+    color: green;
+}
+
+.perdu
+{
+    color: rgb(197, 5, 5);
+}
+
+
+
+/* BREAKPOINTS */
+@media all and (max-width: 420px)
+{
+    /* H1 */
+    h1
+    {
+    font-size: 20px;
+    }
+
+    /* PETIT */
+    .petit
+    {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 350px)
+{
+    /* INPUT */
+    input
+    {
+        max-width: 75%;
+    }
+}

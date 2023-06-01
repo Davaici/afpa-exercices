@@ -1,0 +1,212 @@
+/** CORE */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    font-size: 100%;
+}
+
+body
+{
+    /* font-family: sans-serif; */
+    font-size: 20px;
+}
+
+/** ATOMS */
+/*& INPUT */
+.input, .textarea, .datalist
+{
+    display: block;
+    max-width: 100%;
+    padding: 5px;
+
+    border-radius: 2px;
+    border: 1px lightgrey solid;
+
+    font-size: 15px;
+}
+.input:focus, .textarea:focus
+{
+    outline: none;
+    border-color: lightblue;
+}
+
+/*& H1 */
+.h1
+{
+    font-size: 23px;
+}
+
+/*& AVERTISSEMENT FORMULAIRE */
+.avertissementFormulaire
+{
+    color: darkred;
+    font-weight: bold;
+}
+
+/*& LABEL */
+.label
+{
+    font-weight: bold;
+}
+
+/*& BOUTON */
+.bouton
+{
+    display: block;
+    max-width: 100%;
+
+    padding: 0 10px 0 10px;
+}
+
+/*& ASTERISQUE ROUGE*/
+.asterisqueRouge
+{
+    color: red;
+    font-weight: bold;
+}
+
+/** MOLECULES */
+/*& INPUT BOX*/
+.inputBox
+{
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 10px;
+    align-items: center;
+}
+
+.inputBox__field
+{
+    max-width: 100%;
+
+    display: flex;
+    gap: 10px;
+}
+
+.inputBox__input
+{
+    min-width: 0;
+    flex-grow: 1;
+}
+
+.inputBox__liste
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/*& Deletable area */
+.deletableArea
+{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.deletableArea__textarea
+{
+    min-width: 0;
+    flex-grow: 1;
+}
+
+.deletableArea__button
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    cursor: pointer;
+    background-color: darkred;
+    color: white;
+}
+.deletableArea__button:hover
+{
+    background-color: white;
+    outline: 1px darkred solid;
+    color: darkred;
+}
+.deletableArea__button::before
+{
+    content: '-';
+    max-width: 20px;
+    max-height: 20px;
+    display: block;
+}
+
+/** ORGANISMS */
+/*& FORM */
+.form
+{
+    margin-left: 90px;
+}
+
+.form__inner
+{
+    max-width: 100%;
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form__body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__boutons
+{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/** LAYOUTS */
+/*& PAGE */
+.page
+{
+    max-width: 100%;
+    width: 600px;
+    padding: 20px 15px;
+    margin: auto;
+}
+
+.page__avertissementFormulaire
+{
+    margin-top: 25px;
+}
+
+.page__form
+{
+    margin-top: 10px;
+}
+
+/** MEDIA QUERIES */
+@media all and (max-width: 510px)
+{
+    .form
+    {
+        margin-left: 0;
+    }
+}

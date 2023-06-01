@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Guess The Number</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="page">
+            <header>
+                <h1>Bienvenue sur Guess The Number !!!</h1>
+                <p class="petit">(j'avais pas d'autre idée de nom pour le jeu)</p>
+            </header>
+
+            <section class="explications">
+                <p>Un nombre <strong>entre 0 et 100 a été désigné</strong> aléatoirement.</p>
+
+                <p>Le but est de le deviner en proposant des nombres dans la box, puis de cliquer sur le bouton pour voir si c'est la bonne réponse.</p>
+
+                <p>Ensuite, il sera indiqué si le nombre proposé est plus petit, plus grand ou égal au nombre aléatoire.</p>
+
+                <p>Bonne chance !</p>
+            </section>
+
+            <section class="zone-input">
+                <p id="commentaire"></p>
+
+                <input type="text" id="box">
+
+                <button id="bouton">Tester</button>
+            </section>
+        </div>
+
+        <!-- JS -->
+        <script src="script.js"></script>
+    </body>
+</html>

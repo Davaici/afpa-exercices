@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Formulaire</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="page">
+            <h1 class="h1">Vos coordonnées :</h1>
+
+            <p class="avertissementFormulaire page__avertissementFormulaire">* Ces zones sont obligatoires pour envoyer le formulaire</p>
+
+            <form class="form page__form" method="POST" action="rien">
+                <div class="form__inner">
+                    <div class="form__body">
+                        <div class="inputBox">
+                            <label class="label" for="societe">Société :</label>
+
+                            <div class="inputBox__field">
+                                <input class="input inputBox__input" id="societe" type="text" >
+
+                                <p class="asterisqueRouge">*</p>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label class="label" for="personneAContacter">Personne à contacter :</label>
+
+                            <div class="inputBox__field">
+                                <input class="input inputBox__input" id="personneAContacter" type="text" >
+
+                                <p class="asterisqueRouge">*</p>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label class="label" for="adresseDelEntreprise">Adresse de l'entreprise :</label>
+
+                            <div class="inputBox__field">
+                                <textarea class="textarea inputBox__input" id="adresseDelEntreprise" cols="30" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label class="label" for="codePostal">Code postal :</label>
+
+                            <div class="inputBox__field">
+                                <input class="input inputBox__input" id="codePostal" type="text" >
+
+                                <p class="asterisqueRouge">*</p>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label class="label" for="ville">Ville :</label>
+
+                            <div class="inputBox__field">
+                                <input class="input inputBox__input" id="ville" type="text" >
+
+                                <p class="asterisqueRouge">*</p>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label class="label" for="email">Email :</label>
+
+                            <div class="inputBox__field">
+                                <input class="input inputBox__input" id="email" type="text" >
+
+                                <p class="asterisqueRouge">*</p>
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label class="label" for="telephone">Téléphone :</label>
+
+                            <div class="inputBox__field">
+                                <input class="input inputBox__input" id="telephone" type="text">
+                            </div>
+                        </div>
+
+                        <div class="inputBox">
+                            <div class="inputBox__liste">
+                                <label for="technique" class="label">Sélectionnez l'environnement technique du projet :</label>
+
+                                <input class="input" id="technique" list="optionsTechnique" placeholder="Choisissez">
+                                <datalist id="optionsTechnique">
+                                    <option value="Access"></option>
+                                    <option value="Java"></option>
+                                    <option value="Delphi"></option>
+                                    <option value="Windev"></option>
+                                    <option value="Visual Basic"></option>
+                                    <option value="Power Builder"></option>
+                                    <option value="Internet"></option>
+                                    <option value="Intranet"></option>
+                                    <option value="Windows NT"></option>
+                                    <option value="Unix"></option>
+                                    <option value="SQL Server"></option>
+                                    <option value="Oracle"></option>
+                                    <option value="Autres..."></option>
+                                </datalist>
+                            </div>
+
+                            <div class="inputBox__field">
+                                <div class="deletableArea inputBox__input">
+                                    <textarea class="textarea deletableArea__textarea" rows="6" id="techniqueArea" readonly></textarea>
+
+                                    <div class="deletableArea__button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__boutons">
+                        <button class="bouton" type="submit">Envoyer</button>
+                        <button class="bouton" type="reset">Effacer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
