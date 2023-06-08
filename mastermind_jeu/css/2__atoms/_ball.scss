@@ -1,0 +1,83 @@
+//* BALL
+.ball
+{
+    //* Block
+    display: block;
+    max-width: 100%;
+    width: $size-ball;
+    height: $size-ball;
+    transform: translate(0, 0); // Pour retirer le background du parent quand on drag
+
+    border-radius: $size-ball;
+    border: 1px solid $color-black;
+    background-color: $color-emptyBall;
+
+    //* Modifiers
+    &--small
+    {
+        width: $size-ballSmall;
+        height: $size-ballSmall;
+    }
+
+    &--medium
+    {
+        width: $size-ballMedium;
+        height: $size-ballMedium;
+        cursor: pointer;
+
+        &:hover
+        {
+            opacity: 0.7;
+        }
+    }
+
+    &--emptyball
+    {
+        background-color: $color-emptyBall;
+    }
+
+    &--darkgrey
+    {
+        background-color: $color-darkgrey;
+    }
+
+    &--black
+    {
+        background-color: $color-black;
+    }
+
+    &--red
+    {
+        background-color: $color-red;
+    }
+
+    &--green
+    {
+        background-color: $color-green;
+    }
+
+    &--blue
+    {
+        background-color: $color-blue;
+    }
+    
+    &--yellow
+    {
+        background-color: $color-yellow;
+    }
+
+    &--orange
+    {
+        background-color: $color-orange;
+    }
+
+    &--pink
+    {
+        background-color: $color-pink;
+    }
+
+    &--white
+    {
+        background-color: $color-white;
+    }
+}

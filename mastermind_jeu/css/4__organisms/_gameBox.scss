@@ -1,0 +1,14 @@
+.gameBox
+{
+    //* Block
+    width: $width-gameBox;
+    min-height: $height-gameBox;
+    max-width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: $color-mediumgrey;
+    border-radius: 20px;
+}

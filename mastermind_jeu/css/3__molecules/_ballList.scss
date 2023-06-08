@@ -1,0 +1,9 @@
+.ballList
+{
+    //* Block
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, $size-ballMedium));
+    grid-column-gap: 3px;
+    grid-row-gap: 15px;
+}

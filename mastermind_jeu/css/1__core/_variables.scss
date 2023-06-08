@@ -1,0 +1,40 @@
+//* VARIABLES
+
+//* Colors
+$color-darkred: #800000;
+$color-lightdarkred: #912626;
+$color-red: red;
+$color-green: green;
+$color-yellow: yellow;
+$color-black: black;
+$color-pink: #EB84ED;
+$color-orange: #FBA601;
+$color-white: white;
+$color-darkgrey: #586961;
+$color-mediumgrey: #808080;
+$color-verify: #e8eaec;
+$color-verifyHover: #B0B2B8;
+$color-verifyDisabled: #B4B6B6;
+$color-emptyBall: #C8C8C8;
+$color-cyan: #00FFFD;
+$color-blue: blue;
+
+//* Font
+$font: serif;
+$font-size: 14px;
+
+//* Sizes
+$size-ball: 50px;
+$size-ballMedium: 30px;
+$size-ballSmall: 25px;
+$height-ballLine: 60px;
+$width-gameBox: 650px;
+$height-gameBox: 400px;
+$height-asideGame: 380px;
+
+$width-game: 910px;
+$height-game: 600px;
+
+//* Breakpoints
+$breakpoint-laptop: $width-game;
+$breakpoint-mobile: 590px;

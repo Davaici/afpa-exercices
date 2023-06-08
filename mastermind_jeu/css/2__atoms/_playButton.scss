@@ -1,0 +1,36 @@
+//* PLAY BUTTON
+.playButton
+{
+    //* Block
+    width: 140px;
+    height: 45px;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-green;
+    color: $color-white;
+    border: 1px solid $color-white;
+    border-radius: 45px;
+    cursor: pointer;
+
+    font-weight: bold;
+
+    &:hover
+    {
+        background-color: lighten($color-green, 3);
+    }
+
+    //* Modifiers
+    &--red
+    {
+        background-color: $color-red;
+
+        &:hover
+        {
+            background-color: darken($color-red, 3);
+        }
+    }
+}

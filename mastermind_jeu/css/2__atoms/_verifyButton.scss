@@ -1,0 +1,34 @@
+//* VERIFY BUTTON
+.verifyButton
+{
+    //* Block
+    width: 85px;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow-wrap: anywhere;
+
+    border: none;
+    border-radius: 3px;
+    background-color: $color-verify;
+    cursor: pointer;
+
+    &:hover
+    {
+        background-color: $color-verifyHover;
+    }
+
+    //* Modifiers
+    &--fit
+    {
+        height: $height-ballLine;
+    }
+
+    &--disabled
+    {
+        background-color: $color-verifyDisabled;
+    }
+}

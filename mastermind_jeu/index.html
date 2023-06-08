@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Mastermind</title>
+
+        <!--* CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!--* BODY -->
+        <div class="page">
+            <div class="game">
+                <h1 class="gameTitle game__title">MASTERMIND</h1>
+
+                <div class="game__game">
+                    <div class="asideGame game__asideGame">
+                        <div class="asideGame__buttons">
+                            <button class="playButton playButton--green">DÉMARRER</button>
+                            <button class="playButton playButton--red">ANNULER</button>
+                        </div>
+
+                        <div class="asideGame__body">
+                            <div class="ballList">
+                                <div class="ball ball--medium ball--red"></div>
+                                <div class="ball ball--medium ball--green"></div>
+                                <div class="ball ball--medium ball--blue"></div>
+                                <div class="ball ball--medium ball--yellow"></div>
+                                <div class="ball ball--medium ball--orange"></div>
+                                <div class="ball ball--medium ball--pink"></div>
+                                <div class="ball ball--medium ball--black"></div>
+                                <div class="ball ball--medium ball--white"></div>
+                            </div>
+
+                            <div class="trials">
+                                <p class="trials__text">Nombre d'essai(s) restant(s)</p>
+
+                                <p class="trials__number"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gameBox">
+                        <div class="resultLine">
+                            <div class="ball ball--darkgrey"></div>
+                            <div class="ball ball--darkgrey"></div>
+                            <div class="ball ball--darkgrey"></div>
+                            <div class="ball ball--darkgrey"></div>
+                        </div>
+
+                        <div class="trialLine">
+                            <div class="trialLine__bigBalls">
+                                <div class="ball"></div>
+                                <div class="ball"></div>
+                                <div class="ball"></div>
+                                <div class="ball"></div>
+                            </div>
+
+                            <div class="trialLine__smallBalls">
+                                <div class="ball ball--small ball--black"></div>
+                                <div class="ball ball--small ball--black"></div>
+                                <div class="ball ball--small ball--black"></div>
+                                <div class="ball ball--small ball--black"></div>
+                            </div>
+
+                            <div class="trialLine__button">
+                                <button class="verifyButton">Vérifier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--* JS -->
+        <script src="script.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+.asideGame
+{
+    //* Block
+    height: $height-asideGame;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    //* Elements
+    & > *
+    {
+        min-width: 0;
+    }
+
+    &__buttons
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__body
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

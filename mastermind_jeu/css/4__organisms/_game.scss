@@ -1,0 +1,77 @@
+//* GAME
+.game
+{
+    //* Block
+    // min-height: $height-game;
+    width: $width-game;
+    max-width: 100%;
+    padding: 0 30px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    background-color: $color-darkred;
+
+    //* Elements
+    &__title
+    {
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    &__game
+    {
+        display: flex;
+        gap: 60px;
+
+        & > *
+        {
+            min-width: 0;
+        }
+
+        //* Media queries
+        @media all and (max-width: $breakpoint-laptop)
+        {
+            max-width: 100%;
+            width: $width-gameBox;
+            flex-direction: column;
+        }
+
+        @media all and (max-width: $breakpoint-mobile)
+        {
+            align-items: center;
+        }
+    }
+
+    &__asideGame
+    {
+        min-height: 0;
+        padding-top: 10px;
+
+        //* Media queries
+        @media all and (max-width: $breakpoint-laptop)
+        {
+            flex-direction: row;
+            height: auto;
+
+            //* Elements mix
+            .asideGame__body
+            {
+                flex-direction: row;
+            }
+        }
+
+        @media all and (max-width: $breakpoint-mobile)
+        {
+            min-height: $height-asideGame;
+            flex-direction: column;
+
+            //* Elements mix
+            .asideGame__body
+            {
+                flex-direction: column;
+            }
+        }
+    }
+}

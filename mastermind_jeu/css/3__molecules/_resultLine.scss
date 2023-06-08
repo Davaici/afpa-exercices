@@ -1,0 +1,15 @@
+.resultLine
+{
+    //* Block
+    max-width: 100%;
+    width: 620px;
+    min-height: $height-ballLine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: $color-lightdarkred;
+    border: 1px solid $color-black;
+    border-radius: $height-ballLine;
+}
